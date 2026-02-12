@@ -174,10 +174,12 @@ aside{
 .img_as {
     width: 230px;
     margin-bottom: 0px;
+    margin-left: 7px;
+    margin-right: 7px;
 }
 
 .contacts, .techskills, .softskills {
-    margin-left: 20px;
+    margin-left: 12px;
     margin-top: 0px;
     color: var(--primary-bg-color);
 }
