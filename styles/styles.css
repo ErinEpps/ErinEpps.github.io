@@ -17,8 +17,9 @@ body {
 .main {
     display: flex;
     flex-direction: row-reverse;
-    width: 800px; 
-    margin: 0 auto; 
+    max-width: 1100px;
+    width: 100%;
+    margin: 20px auto; 
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -49,7 +50,7 @@ body {
 .base_short_info {
     font-size: smaller;
     color: #000000;
-    width: 400px;
+    max-width: 100%;
 }
 
 .expiriences {
@@ -159,9 +160,6 @@ body {
 }
 
 
-
-
-
 /* sidebar */
 
 
@@ -172,8 +170,10 @@ aside{
 }
 
 .img_as {
-    width: 230px;
-    margin-bottom: 0px;
+    width: 100%;
+    max-width: 230px;
+    height: auto;
+    display: block;
 }
 
 .contacts, .techskills, .softskills {
@@ -216,3 +216,70 @@ aside{
     color: var(--primary-bg-color);
     font-size: 16px;
 }
+
+
+@media (max-width: 768px) {
+
+    .main {
+        flex-direction: column;
+        box-shadow: none;
+        margin: 0;
+    }
+
+    aside {
+        margin-left: 0;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .img_as {
+        margin: 0 auto 20px;
+    }
+
+    .base_info,
+    .expiriences,
+    .qualifications,
+    .education {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: 0;
+    }
+
+    .base_name_surname {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .base_position {
+        font-size: 16px;
+    }
+
+    .main_h3 {
+        font-size: 18px;
+    }
+
+    .numerred_list_main {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .contacts,
+    .techskills,
+    .softskills {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .base_info,
+    .expiriences,
+    .qualifications,
+    .education {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+}
+
