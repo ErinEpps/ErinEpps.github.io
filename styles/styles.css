@@ -179,7 +179,7 @@ aside{
 }
 
 .contacts, .techskills, .softskills {
-    margin-left: 20px;
+    margin-left: 12px;
     margin-top: 0px;
     color: var(--primary-bg-color);
 }
